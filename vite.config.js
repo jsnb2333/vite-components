@@ -8,8 +8,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'lib/main.js'),
+      // 打包为umd和iife需要设置的字段，提供包名。
       name: 'MyLib',
-      // the proper extensions will be added
+      // 输出的库文件名
       fileName: 'my-lib'
     },
     rollupOptions: {
