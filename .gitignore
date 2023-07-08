@@ -8,7 +8,8 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-dist
+# dist需要git仓库存储
+# dist
 dist-ssr
 *.local
 
