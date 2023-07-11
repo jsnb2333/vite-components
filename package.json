@@ -1,6 +1,6 @@
 {
   "name": "@jsnb2333/components",
-  "version": "1.0.25",
+  "version": "1.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -20,17 +20,6 @@
     "dist"
   ],
   "main": "./dist/components.umd.cjs",
-  "module": "./dist/components.js",
-  "exports": {
-    ".": {
-      "import": "./dist/components.js",
-      "require": "./dist/components.umd.cjs"
-    },
-    "./dist/*.css": {
-      "import": "./dist/*.css",
-      "require": "./dist/*.css"
-    }
-  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   }

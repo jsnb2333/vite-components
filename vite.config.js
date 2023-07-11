@@ -12,7 +12,9 @@ export default defineConfig({
       name: '@jsnb2333/components',
       // 输出的库文件名
       fileName: 'components',
+      formats: ['umd']
     },
+    minify: true, 
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖
       external: ['vue'],
