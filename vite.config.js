@@ -11,7 +11,7 @@ export default defineConfig({
       // 打包为umd和iife需要设置的字段，提供包名。
       name: '@jsnb2333/components',
       // 输出的库文件名
-      fileName: 'components'
+      fileName: 'components',
     },
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖

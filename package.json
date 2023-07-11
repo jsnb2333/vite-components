@@ -1,6 +1,6 @@
 {
   "name": "@jsnb2333/components",
-  "version": "1.0.23",
+  "version": "1.0.25",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,11 +9,12 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "vue": "^3.2.47",
     "@vitejs/plugin-vue": "^4.1.0",
     "less": "^4.1.3",
     "less-loader": "^11.1.3",
-    "vite": "^4.3.9"
+    "terser": "^5.18.2",
+    "vite": "^4.3.9",
+    "vue": "^3.2.47"
   },
   "files": [
     "dist"
@@ -25,7 +26,7 @@
       "import": "./dist/components.js",
       "require": "./dist/components.umd.cjs"
     },
-    "./dist/*.css":{
+    "./dist/*.css": {
       "import": "./dist/*.css",
       "require": "./dist/*.css"
     }
