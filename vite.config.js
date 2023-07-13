@@ -7,12 +7,12 @@ export default defineConfig({
   plugins: [vue()],
   build: {
     lib: {
-      entry: resolve(__dirname, 'lib/main.js'),
+      entry: resolve(__dirname, 'src/components/index.js'),
       // 打包为umd和iife需要设置的字段，提供包名。
       name: '@jsnb2333/components',
       // 输出的库文件名
       fileName: 'components',
-      formats: ['umd']
+      formats:['umd']
     },
     minify: true, 
     rollupOptions: {
