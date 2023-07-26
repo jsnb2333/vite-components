@@ -24,6 +24,7 @@ yarn install
 yarn dev，开启组件开发模式
 
 yarn build，最后构建打包文件
+由于我们设置了build.watch，这时我们启动项目的时候需要开启两个命令行窗口分别执行vite dev 和 vite build。
 
 npm publish，发布到线上npm网，目前绑定的是我仓库需要权限。
 注意：每次发包都要手动更改package的version字段。

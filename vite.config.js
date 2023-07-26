@@ -12,9 +12,9 @@ export default defineConfig({
       name: '@jsnb2333/components',
       // 输出的库文件名
       fileName: 'components',
-      formats:['umd']
+      formats: ['umd']
     },
-    minify: true, 
+    minify: true,
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖
       external: ['vue'],
@@ -24,6 +24,8 @@ export default defineConfig({
           vue: 'Vue'
         }
       }
-    }
+    },
+    // 启动 vite build 命令时，可以监听src下的文件是否改变，改变了就自动打包。（vscode源代码管理可以会反应不及时，刷新一下即可）
+    watch: {}
   }
 })
